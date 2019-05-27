@@ -1,0 +1,122 @@
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (malloc) failed to allocate 480104 bytes for AllocateHeap
+# Possible reasons:
+#   The system is out of physical RAM or swap space
+#   In 32 bit mode, the process size limit was hit
+# Possible solutions:
+#   Reduce memory load on the system
+#   Increase physical memory or swap space
+#   Check if swap backing store is full
+#   Use 64 bit Java on a 64 bit OS
+#   Decrease Java heap size (-Xmx/-Xms)
+#   Decrease number of Java threads
+#   Decrease Java thread stack sizes (-Xss)
+#   Set larger code cache with -XX:ReservedCodeCacheSize=
+# This output file may be truncated or incomplete.
+#
+#  Out of Memory Error (memory/allocation.inline.hpp:61), pid=19888, tid=0x00000000000075b4
+#
+# JRE version:  (8.0_191-b12) (build )
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (25.191-b12 mixed mode windows-amd64 compressed oops)
+# Failed to write core dump. Minidumps are not enabled by default on client versions of Windows
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x0000000000bcd800):  JavaThread "Unknown thread" [_thread_in_vm, id=30132, stack(0x0000000002ca0000,0x0000000002da0000)]
+
+Stack: [0x0000000002ca0000,0x0000000002da0000]
+[error occurred during error reporting (printing stack bounds), id 0xc0000005]
+
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+
+Other Threads:
+
+=>0x0000000000bcd800 (exited) JavaThread "Unknown thread" [_thread_in_vm, id=30132, stack(0x0000000002ca0000,0x0000000002da0000)]
+
+VM state:not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+GC Heap History (0 events):
+No events
+
+Deoptimization events (0 events):
+No events
+
+Classes redefined (0 events):
+No events
+
+Internal exceptions (0 events):
+No events
+
+Events (0 events):
+No events
+
+
+Dynamic libraries:
+0x00007ff7cf870000 - 0x00007ff7cf8a7000 	C:\Program Files\Java\jre1.8.0_191\bin\javaw.exe
+0x00007ffbe7930000 - 0x00007ffbe7b1d000 	C:\windows\SYSTEM32\ntdll.dll
+0x00007ffbe5610000 - 0x00007ffbe56c3000 	C:\windows\System32\KERNEL32.DLL
+0x00007ffbe3d40000 - 0x00007ffbe3fd3000 	C:\windows\System32\KERNELBASE.dll
+0x00007ffbe75a0000 - 0x00007ffbe7643000 	C:\windows\System32\ADVAPI32.dll
+0x00007ffbe7260000 - 0x00007ffbe72fe000 	C:\windows\System32\msvcrt.dll
+0x00007ffbe7650000 - 0x00007ffbe76ee000 	C:\windows\System32\sechost.dll
+0x00007ffbe4b60000 - 0x00007ffbe4c82000 	C:\windows\System32\RPCRT4.dll
+0x00007ffbe6e30000 - 0x00007ffbe6fc7000 	C:\windows\System32\USER32.dll
+0x00007ffbe4270000 - 0x00007ffbe4290000 	C:\windows\System32\win32u.dll
+0x00007ffbe5900000 - 0x00007ffbe5929000 	C:\windows\System32\GDI32.dll
+0x00007ffbe4000000 - 0x00007ffbe419a000 	C:\windows\System32\gdi32full.dll
+0x00007ffbe41a0000 - 0x00007ffbe4240000 	C:\windows\System32\msvcp_win.dll
+0x00007ffbe3a00000 - 0x00007ffbe3afa000 	C:\windows\System32\ucrtbase.dll
+0x00007ffbd2f00000 - 0x00007ffbd3179000 	C:\windows\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.17763.437_none_05b63dca071e5dd6\COMCTL32.dll
+0x00007ffbe4c90000 - 0x00007ffbe4fbc000 	C:\windows\System32\combase.dll
+0x00007ffbe4290000 - 0x00007ffbe430e000 	C:\windows\System32\bcryptPrimitives.dll
+0x00007ffbe5560000 - 0x00007ffbe558e000 	C:\windows\System32\IMM32.DLL
+0x0000000071760000 - 0x0000000071832000 	C:\Program Files\Java\jre1.8.0_191\bin\msvcr100.dll
+0x0000000070eb0000 - 0x0000000071754000 	C:\Program Files\Java\jre1.8.0_191\bin\server\jvm.dll
+0x00007ffbe5740000 - 0x00007ffbe5748000 	C:\windows\System32\PSAPI.DLL
+0x00007ffbe04b0000 - 0x00007ffbe04b9000 	C:\windows\SYSTEM32\WSOCK32.dll
+0x00007ffbe56d0000 - 0x00007ffbe573d000 	C:\windows\System32\WS2_32.dll
+0x00007ffbd2d80000 - 0x00007ffbd2d8a000 	C:\windows\SYSTEM32\VERSION.dll
+0x00007ffbda990000 - 0x00007ffbda9b4000 	C:\windows\SYSTEM32\WINMM.dll
+0x00007ffbda960000 - 0x00007ffbda98d000 	C:\windows\SYSTEM32\WINMMBASE.dll
+0x00007ffbe4b10000 - 0x00007ffbe4b5a000 	C:\windows\System32\cfgmgr32.dll
+0x0000000070ea0000 - 0x0000000070eaf000 	C:\Program Files\Java\jre1.8.0_191\bin\verify.dll
+0x0000000070e70000 - 0x0000000070e99000 	C:\Program Files\Java\jre1.8.0_191\bin\java.dll
+0x0000000070e50000 - 0x0000000070e66000 	C:\Program Files\Java\jre1.8.0_191\bin\zip.dll
+
+VM Arguments:
+jvm_args: -Dfile.encoding=Cp1252 
+java_command: payment.ibm.ui.MainUi
+java_class_path (initial): C:\Users\AlokKhare\eclipse-workspace\PaymentApplication\bin;C:\Users\AlokKhare\Downloads\mysql-connector-java-5.1.47\mysql-connector-java-5.1.47\mysql-connector-java-5.1.47-bin.jar
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+CLASSPATH=C:\javafiles
+PATH=C:/Program Files/Java/jre1.8.0_191/bin/server;C:/Program Files/Java/jre1.8.0_191/bin;C:/Program Files/Java/jre1.8.0_191/lib/amd64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program Files\nodejs\;C:\Users\AlokKhare\AppData\Local\Microsoft\WindowsApps;C:\Users\AlokKhare\AppData\Roaming\npm;C:\Program Files\Microsoft VS Code\bin;C:\Program Files\Java\jdk1.8.0_191\bin;;C:\windows\System32;
+USERNAME=AlokKhare
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 61 Stepping 4, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 10.0 , 64 bit Build 17763 (10.0.17763.437)
+
+CPU:total 4 (initial active 4) (2 cores per cpu, 2 threads per core) family 6 model 61 stepping 4, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, avx, avx2, aes, clmul, erms, rtm, 3dnowpref, lzcnt, ht, tsc, tscinvbit, bmi1, bmi2, adx
+
+Memory: 4k page, physical 8264960k(3038532k free), swap 33430784k(5520k free)
+
+vm_info: Java HotSpot(TM) 64-Bit Server VM (25.191-b12) for windows-amd64 JRE (1.8.0_191-b12), built on Oct  6 2018 09:29:03 by "java_re" with MS VC++ 10.0 (VS2010)
+
+time: Fri May 24 14:24:20 2019
+elapsed time: 0 seconds (0d 0h 0m 0s)
+
